@@ -12343,6 +12343,10 @@ function () {
                     q.resize();
                   };
 
+                  if (config.theme) {
+                    q.theme.apply(config.theme);
+                  }
+
                   var app = q.openApp(config.appId, _objectSpread({}, config, {
                     isSecure: config.secure,
                     prefix: prefix
